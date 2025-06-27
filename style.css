@@ -1,0 +1,27 @@
+body{
+    font-family: Roboto, sans-serift;
+}
+
+.navbar{
+    background-color: #00000A;
+}
+
+.navbar-brand{
+    background: linear-gradient(to right, #00ffff, #8f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Audiowide", sans-serif;
+}
+
+.nav .nav-link.active{
+    background-color: #6c1c91;
+    color: #5ee0ff;
+}
+
+.nav .nav-link{
+    color: #5ee0ff;
+}
+
+.navbar-toggler{
+    background-color: #8f00ff;
+}

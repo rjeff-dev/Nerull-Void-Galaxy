@@ -9,43 +9,103 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabeca">
         <div class="container">
-            <h1 class="navbar-brand m-0">Nerull Void Galaxy</h1>
-            <button  class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <h1 class="navbar-brand m-0 section-color">Nerull Void Galaxy</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link active" href="#">
-                            <i class="bi bi-house-door me-1"></i>
-                            Sobre</a>
+                        <a class="nav-link" href="#sobre"><i class="bi bi-house-door me-1"></i>Sobre</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-calendar-check me-1"></i>
-                            Eventos</a>
+                        <a class="nav-link" href="#novidades"><i class="bi bi-calendar-check me-1"></i>Novidades</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-card-text me-1"></i>
-                            Cardápio</a>
+                        <a class="nav-link" href="#"><i class="bi bi-card-text me-1"></i>Cardápio</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-chat-left-text me-1"></i>
-                            Fale conosco</a>
+                        <a class="nav-link" href="#"><i class="bi bi-chat-left-text me-1"></i>Fale conosco</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
+    <div data-bs-spy="scroll" data-bs-target="#cabeca">
+        <section id="sobre" class="cor-fundo">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imagem/Slides/slide1_.png" class="d-block w-100" alt="Foto dos jogos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagem/Slides/slide2_.png" class="d-block w-100" alt="Mesas de jogos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagem/Slides/slide3_.png" class="d-block w-100" alt="Ambiente de restaurante">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <div class="pt-4 pb-4 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="imagem/NV-Galaxy-fachada.png" class="d-bloock w-100 rounded" alt="Fachada da loja">
+                        </div>
+                        <div class="col-md-5">
+                            <h2 class="section-color">Sobre a Narull Void Galaxy </h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas sint laborum molestiae nobis voluptatibus! Consectetur, cupiditate vel. Doloremque eveniet culpa ex debitis. Laudantium eum eius nulla facilis sunt. Eveniet, adipisci.
+                            </p>
+                            <h3 class="section-color">Sobre os espaços</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni perspiciatis doloribus vitae? Impedit animi ipsum saepe suscipit quis unde, ab vel dolores magni veritatis autem dolorum dicta accusamus, laudantium recusandae?
+                            </p>
+                            <ul>
+                                <li>Salão de jogos</li>
+                                <li>RPG</li>
+                                <li>Zona de alimentação</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="novidades" class="cor-fundo pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-color text-center">Todas as novidades</h2>                    
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -6,13 +6,6 @@ body{
     background-color: #00000A;
 }
 
-.navbar-brand{
-    background: linear-gradient(to right, #00ffff, #8f00ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Audiowide", sans-serif;
-}
-
 .nav .nav-link.active{
     background-color: #6c1c91;
     color: #5ee0ff;
@@ -24,4 +17,15 @@ body{
 
 .navbar-toggler{
     background-color: #8f00ff;
+}
+
+.section-color{
+    background: linear-gradient(to right, #00ffff, #8f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Audiowide", sans-serif;
+}
+.cor-fundo{
+    background-color: #020238;
+    color: #00ffff;
 }

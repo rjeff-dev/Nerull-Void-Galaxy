@@ -6,12 +6,14 @@ body{
     background-color: #00000A;
 }
 
-.nav .nav-link.active{
+.nav .nav-link.active,
+#fale-conosco button{
     background-color: #6c1c91;
     color: #5ee0ff;
 }
 
-.nav .nav-link{
+.nav .nav-link, 
+.text-color{
     color: #5ee0ff;
 }
 
@@ -25,7 +27,32 @@ body{
     -webkit-text-fill-color: transparent;
     font-family: "Audiowide", sans-serif;
 }
+
 .cor-fundo{
     background-color: #020238;
     color: #00ffff;
+}
+
+.aside-color .nav-link.active{
+    background-color: #6c1c91;
+    color: #00ffff;
+}
+
+.aside-color .nav-link:hover{
+    color: #e1c3e2;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767){
+    .carrousel-item img{
+        height: 280px;
+    }
 }
